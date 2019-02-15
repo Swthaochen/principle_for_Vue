@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="message"/>
+        {{message}}
+    </div>
+    <script src="./MVVM.js"></script>
+    <script src="./compile.js"></script>
+    <script>
+        //MVVM进行整合
+
+        //模板的定义
+
+        //数据的劫持
+
+        let vm = new MVVM({
+            el: '#app',
+            data: {
+                message: 'Hello World'
+            }
+        })
+
+    </script>
+</body>
+</html>
